@@ -28,3 +28,14 @@
 
 // DOCUMENT READY FUNCTION
 
+var userChoice="";
+console.log(userChoice);
+
+        var computerChoice="";
+        console.log(computerChoice);
+        
+                var winner="";
+                console.log(winner)
+                        
+                        var choices=["rock","paper","scissors"];
+                        console.log(choices);
