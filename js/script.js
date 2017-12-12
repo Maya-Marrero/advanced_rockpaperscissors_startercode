@@ -20,14 +20,6 @@
 
 //GLOBAL VARIABLES
 
-
-
-//FUNCTIONS
-
-
-
-// DOCUMENT READY FUNCTION
-
 var userChoice="";
 console.log(userChoice);
 
@@ -39,3 +31,28 @@ console.log(userChoice);
                         
                         var choices=["rock","paper","scissors"];
                         console.log(choices);
+
+
+//FUNCTIONS
+
+
+
+// DOCUMENT READY FUNCTION
+
+$( document ).ready(function(){
+     
+     $("#shoot").click(function(){
+        $("#User1").html($("#input").val());
+                  
+ });
+ 
+ 
+     
+  
+});
+
+
+
+
+
+
