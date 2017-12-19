@@ -42,15 +42,45 @@ console.log(userChoice);
 $( document ).ready(function(){
      
      $("#shoot").click(function(){
-        $("#User1").html($("#input").val());
-                  
+             var userChoice=$("#input").val();
+        $("#User1").html(userChoice);
+          var randomIndex = Math.floor(Math.random() * choices.length);
+        computerChoice=choices[randomIndex];
+                 $("#Computer1").html(computerChoice);
+                 
+                 if ((computerChoice==="rock") && (userChoice==="paper"))
+                  $("#winner").text("YOU WIN!");
+                  else if ((computerChoice==="paper") && (userChoice==="rock"))
+                  $("#winner").text(" COMPUTER WINS!");
+                  else if ((computerChoice==="rock") && (userChoice==="rock"))
+                  $("#winner").text(" IT'S A DRAW!");
+                  else if ((computerChoice==="scissors") && (userChoice==="paper"))
+                  $("#winner").text(" COMPUTER WINS!");
+                  else if ((computerChoice==="paper") && (userChoice==="scissors"))
+                  $("#winner").text(" YOU WIN!");
+                  else if ((computerChoice==="scissors") && (userChoice==="scissors"))
+                  $("#winner").text(" IT'S A DRAW!");
+                  else if ((computerChoice==="scissors") && (userChoice==="rock"))
+                  $("#winner").text("YOU WIN");
+                  else if ((computerChoice==="rock") && (userChoice==="scissors"))
+                  $("#winner").text("Computer Wins!");
+                  else if ((computerChoice==="paper") && (userChoice==="paper"))
+                  $("#winner").text(" IT'S A DRAW!");
+                 
+                  $('#input').val('');
+                 
+                 
+       
  });
+ 
+ 
  
  
      
   
 });
-
+ 
+ 
 
 
 
